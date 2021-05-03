@@ -6,13 +6,13 @@ document.getElementById("player1_name").innerHTML=player_1+" :";
 document.getElementById("player2_name").innerHTML=player_2+" :";
 document.getElementById("player1_score").innerHTML=player1Score;
 document.getElementById("player2_score").innerHTML=player2Score;
-document.getElementById("player_question").innerHTML=player_1;
-document.getElementById("player_answer").innerHTML=player_2;
+document.getElementById("player_question").innerHTML="Quostion turn"+player_1;
+document.getElementById("player_answer").innerHTML="Answer turn"+player_2;
 function send()
 {
 number1=document.getElementById("number1").value;
 number2=document.getElementById("number2").value;
-actual_answer=phaseInt(number1)*(number2);
+actual_answer=parseInt(number1)*parseInt(number2);
 
 question_number="<h4 id='word_display'>Q. "+number1+"X"+number2+"</h4>";
 inputBox="<br>Answer: <input type='text' id='input_check_box'>";
